@@ -19,7 +19,7 @@ mach_corpus = Corpus(VectorSource(mach_text))
 # create document term matrix applying some transformations
 tdm = TermDocumentMatrix(mach_corpus,
                          control = list(removePunctuation = TRUE,
-                                        stopwords = c("hilaryclinton", "hilary", stopwords("english")),
+                                        stopwords = c("hilaryclinton", "hilary", "donald", stopwords("english")),
                                         removeNumbers = TRUE, tolower = TRUE))
 # define tdm as matrix
 m = as.matrix(tdm)
